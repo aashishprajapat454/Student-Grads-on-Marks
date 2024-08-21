@@ -1,3 +1,4 @@
+// assing student marks
 let studentMarks = {
 	Akash: 96,
 	Videsh: 73,
@@ -10,6 +11,7 @@ let studentMarks = {
 	Ramlal: 45,
 	Akshay: 33
 }
+// assing Student grads on marks bases
 function assingGrade() {
 	for (let marks in studentMarks) {
 		if (studentMarks[marks] >= 90) {
@@ -24,17 +26,8 @@ function assingGrade() {
 		else if (studentMarks[marks] <= 50) {
 			console.log(`dear ${marks} and your marks is ${studentMarks[marks]} with D Grade`);
 		}
-		// if (studentMarks[marks] <= 33 ) {
-		// 	console.log(`dear ${marks},fail ${studentMarks[marks]}`);
-		// }
-		// else if(studentMarks[marks] >= 34) {
-
-		// }
-		// else {
-		// 	console.log("error");
-
-		// }
 	}
 
 }
+// call the funtion
 assingGrade();
